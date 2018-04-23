@@ -1,0 +1,3 @@
+[submodule "themes/lwechurch"]
+	path = themes/lwechurch
+	url = git@github.com:lwec/lwechurch.com.git
