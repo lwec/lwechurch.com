@@ -4,6 +4,7 @@ draft = true
 speaker = "Barry Gin"
 speakers = ["Barry Gin"]
 title = "Another test"
+type = ""
 
 +++
 
