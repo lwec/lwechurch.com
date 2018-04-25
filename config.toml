@@ -2,3 +2,9 @@ baseURL = "http://lwechurch.com/"
 languageCode = "en-us"
 title = "Living Water Evangelical Church"
 theme = "lwechurch"
+preserveTaxonomyNames = true
+
+[taxonomies]
+  sermon = "sermons"
+  staff = "staff"
+  speaker = "speakers"
