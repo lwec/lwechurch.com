@@ -28,3 +28,10 @@ fields:
   type: boolean
   hidden: false
   default: true
+- type: text
+  name: speaker
+  label: Speaker
+  description: The name of the speaker of this sermon
+  config:
+    required: true
+  default: Barry Gin
