@@ -1,4 +1,5 @@
 ---
-title: "Barry Gin"
-bio: "Pastor Barry’s bio."
+title: Barry Gin
+bio: Pastor Barry’s bio.
+
 ---
