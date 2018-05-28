@@ -1,9 +1,4 @@
 baseURL = "http://lwechurch.com/"
 languageCode = "en-us"
 preserveTaxonomyNames = true
-theme = "lwechurch"
 title = "Living Water Evangelical Church"
-[taxonomies]
-sermon = "sermons"
-speaker = "speakers"
-staff = "staff"

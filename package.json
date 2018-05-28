@@ -1,0 +1,33 @@
+{
+  "name": "lwechurch.com-hugo-static",
+  "version": "1.0.0",
+  "description": "source files + webpack build for lwechurch.com-hugo",
+  "main": "index.js",
+  "repository": "https://github.com/lwec/lwechurch.com",
+  "author": "Kai Yao",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "prettier": "^1.13.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "rellax": "^1.6.2"
+  }
+}
