@@ -1,7 +1,6 @@
 ---
 name: Pastor James Huang
 position: Mandarin Pastor
-portraitUrl: ""
 weight: 40
 ---
 

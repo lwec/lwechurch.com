@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://lwechurch.com/sermon/</loc>
-  </url>
-  
-  <url>
     <loc>http://lwechurch.com/staff/barry-gin/</loc>
   </url>
   
@@ -15,12 +11,28 @@
   </url>
   
   <url>
-    <loc>http://lwechurch.com/</loc>
+    <loc>http://lwechurch.com/staff/geoff-ng/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lwechurch.com/staff/james-huang/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lwechurch.com/staff/hui-li-chang/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lwechurch.com/sermon/</loc>
   </url>
   
   <url>
     <loc>http://lwechurch.com/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lwechurch.com/</loc>
   </url>
   
   <url>

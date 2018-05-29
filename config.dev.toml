@@ -3,7 +3,5 @@ languageCode = "en-us"
 preserveTaxonomyNames = true
 title = "Living Water Evangelical Church"
 
-disableLiveReload = true
-
 [params]
-environment = "production"
+environment = "development"

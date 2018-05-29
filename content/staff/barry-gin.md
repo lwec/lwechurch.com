@@ -1,7 +1,6 @@
 ---
 name: Reverend Barry Gin
 position: English Pastor
-portraitUrl: ""
 weight: 10
 ---
 

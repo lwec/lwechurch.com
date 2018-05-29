@@ -1,9 +1,23 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const cors = require('@koa/cors');
+const webpack = require('webpack');
 
 module.exports = {
+  devServer: {
+    publicPath: 'http://localhost:8080/'
+  },
+  devtool: 'eval',
+  serve: {
+    add(app) {
+      app.use(
+        cors({
+          origin: '*',
+          exposeHeaders: 'Service-Worker-Allowed'
+        })
+      );
+    }
+  },
+
   entry: './static_src/index',
 
   module: {
@@ -20,7 +34,10 @@ module.exports = {
         test: /\.(scss|sass)$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: 'style-loader',
+            options: {
+              sourceMap: true
+            }
           },
           {
             loader: 'css-loader',
@@ -40,7 +57,10 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: 'style-loader',
+            options: {
+              sourceMap: true
+            }
           },
           {
             loader: 'css-loader',
@@ -54,7 +74,10 @@ module.exports = {
         test: /\.less$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
+            loader: 'style-loader',
+            options: {
+              sourceMap: true
+            }
           },
           {
             loader: 'css-loader',
@@ -76,7 +99,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              outputPath: '/images/',
+              outputPath: 'images/',
               name: '[name].[ext]'
             },
           },
@@ -106,26 +129,14 @@ module.exports = {
     ],
   },
 
-  optimization: {
-    minimizer: [
-      new UglifyJsPlugin({
-        cache: true,
-        parallel: true,
-        sourceMap: true
-      }),
-      new OptimizeCSSAssetsPlugin({})
-    ]
-  },
-
   output: {
     filename: 'lwechurch.js',
     path: path.resolve(__dirname, 'static'),
+    publicPath: 'http://localhost:8080/',
   },
 
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'lwechurch.css'
-    }),
+    new webpack.NamedModulesPlugin()
   ],
 
   mode: 'production',

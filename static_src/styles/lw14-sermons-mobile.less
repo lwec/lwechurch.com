@@ -1,3 +1,7 @@
+.lw14-body--sermon .lw14-page-intro {
+  min-height: 40%;
+}
+
 .lw14-sermons-content {
 	background: @bg-light;
 }
@@ -9,4 +13,42 @@
 	&-title { margin: 0; }
 	&-meta { color: @secondary-text; font-family: 'montserratregular'; font-size: 75%; }
 	&-meta-link { margin-right: 20px; }
+}
+
+.lw14-sermon {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.lw14-sermon__title { font-family: 'pt_serifbold'; }
+.lw14-sermon__speaker,
+.lw14-sermon__date {
+  color: @description-text;
+  font-size: 12px;
+
+  @media only screen and ( min-width: 768px ) {
+    font-size: 14px;
+  }
+
+  @media only screen and ( min-width: 992px ) {
+    font-size: 18px;
+  }
+}
+.lw14-sermon__date {
+  @media only screen and ( min-width: 768px ) {
+    text-align: right;
+  }
+}
+.lw14-sermon__audio-container {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.lw14-sermon__audio {
+  width: 100%;
 }

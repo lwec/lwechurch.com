@@ -1,7 +1,6 @@
 ---
 name: Reverend Tony Chon
 position: Youth Pastor
-portraitUrl: ""
 weight: 20
 ---
 

@@ -1,7 +1,6 @@
 ---
 name: Pastor Hui-Li Chang
 position: Children’s Pastor
-portraitUrl: ""
 weight: 50
 ---
 

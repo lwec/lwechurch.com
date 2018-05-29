@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>.Site.Title on Living Water Evangelical Church</title>
+    <title>Home on Living Water Evangelical Church</title>
     <link>http://lwechurch.com/</link>
-    <description>Recent content in .Site.Title on Living Water Evangelical Church</description>
+    <description>Recent content in Home on Living Water Evangelical Church</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -26,6 +26,34 @@
       
       <guid>http://lwechurch.com/staff/tony-chon/</guid>
       <description>Reverend Tony Chon was born and raised in the Chicagoland area. After graduating from Northeastern Illinois University with a BA in Speech Communications, he attended Moody Bible Institute where he met his wife Ruth. After receiving his Masters of Divinity, he and his wife moved to Taiwan where he became the English Pastor at Tainan Holiness Church. After serving in Taiwan for a year, his family came back to the States with a calling into full-time youth ministry at a Korean church in Dallas, Texas.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://lwechurch.com/staff/geoff-ng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://lwechurch.com/staff/geoff-ng/</guid>
+      <description>Born and raised in NYC, Pastor Geoff graduated from the University of Illinois at Urbana-Champaign and then worked for 4 years in information technology at a Fortune 100 company. After receiving his call to full-time ministry, Geoff attended Trinity Evangelical Divinity School in Deerfield, IL, where he earned his MDiv and ThM. He oversees Overflow Youth Group after 5 years as a youth pastoral intern.
+Geoff spends his free time reading, drinking coffee, and nerding out over sports (especially basketball and baseball)!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://lwechurch.com/staff/james-huang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://lwechurch.com/staff/james-huang/</guid>
+      <description>Pastor James Huang was born in Fujian, China in 1966. He came to know Jesus Christ in 1996, which is the same year that he came to the US. He became a member of CCMC, received his calling to full-time ministry, and in 2001, attended Asbury Theological Seminary. Upon finishing his Master of Divinity in 2004, he went to East Asia and served as an LWEC supported missionary and educator for 13 years.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://lwechurch.com/staff/hui-li-chang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://lwechurch.com/staff/hui-li-chang/</guid>
+      <description>Pastor Hui-Li Chang was raised in Taiwan. It was in high school that she received Jesus Christ as her personal Lord and Savior. Before receiving her Masters in Ministry from Moody Theological Seminary in 2012, she had attained her Masters in Chemistry and doctorate in Education. Her passion is to bring children to the saving knowledge of Jesus Christ, and to equip parents and teachers to raise their children as followers of Christ.</description>
     </item>
     
   </channel>

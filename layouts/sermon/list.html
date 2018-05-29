@@ -1,0 +1,15 @@
+{{ define "pageTitle" }} Sermons {{ end }}
+
+{{ define "body" }}
+<section class="lw14-content">
+  <div class="container">
+    <div class="row">
+      <div class="lw14-sermons col-xs-12">
+          {{ range .Data.Pages }}
+            {{ partial "sermon.html" . }}
+          {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

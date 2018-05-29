@@ -100,14 +100,33 @@
 		max-width: 100%;
 		border-radius: 100%;
 		background: url( 'http://placehold.it/800x800' ) no-repeat scroll center center;
-		background-size: contain;
+		background-size: cover;
 	}
 	&-name { margin-bottom: 0; line-height: 1; }
 	&-text { margin-bottom: 1em; }
 
-	&-normanchung &-photo { background-image: url( '../img/landing-staff-normanchung.jpg' ); }
-	&-barrygin &-photo { background-image: url( '../img/landing-staff-barrygin.jpg' ); }
-	&-tonychon &-photo { background-image: url( '../img/landing-staff-tonychon.jpg' ); }
-	&-huilichang &-photo { background-image: url( '../img/landing-staff-huilichang.jpg' ); }
-	&-ruthhuang &-photo { background-image: url( '../img/landing-staff-ruthhuang.jpg' ); }
+  &-member--hui-li-chang &-photo {
+    background-image: url( '../img/landing-staff-huilichang.jpg' );
+    background-position-y: 10%;
+  }
+  &-member--tony-chon &-photo {
+    background-image: url( '../img/landing-staff-tonychon.jpg' );
+  }
+  &-member--barry-gin &-photo {
+    background-image: url( '../img/landing-staff-barrygin.jpg' );
+    background-position-y: 10%;
+  }
+  &-member--gary-hua &-photo {
+    background-image: url( '../img/landing-staff-garyhua.jpg' );
+  }
+  &-member--james-huang &-photo {
+    background-image: url( '../img/landing-staff-jameshuang.jpg' );
+  }
+  &-member--ruth-huang &-photo {
+    background-image: url( '../img/landing-staff-ruthhuang.jpg' );
+  }
+  &-member--geoff-ng &-photo {
+    background-image: url( '../img/landing-staff-geoffng.jpg' );
+    background-position-y: 15%;
+  }
 }
