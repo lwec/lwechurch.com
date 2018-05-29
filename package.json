@@ -7,6 +7,23 @@
   "author": "Kai Yao",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": ["prettier", "eslint --fix", "git add"],
+    "*.json": ["prettier", "git add"],
+    "*.less": ["prettier", "git add"],
+    "*.scss": ["prettier", "git add"]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "rellax": "^1.6.2"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -14,6 +31,7 @@
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.12.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
@@ -25,9 +43,5 @@
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.9.1",
     "webpack-cli": "^2.1.4"
-  },
-  "dependencies": {
-    "bootstrap": "^4.1.1",
-    "rellax": "^1.6.2"
   }
 }
