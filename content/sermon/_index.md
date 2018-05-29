@@ -1,3 +1,6 @@
 ---
-menu: "main"
+title: ''
+menu:
+  main: {}
+
 ---
