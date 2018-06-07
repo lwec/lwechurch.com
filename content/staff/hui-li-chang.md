@@ -2,6 +2,7 @@
 name: Pastor Hui-Li Chang
 position: Children’s Pastor
 weight: 50
+title: ''
 ---
 
 Pastor Hui-Li Chang was raised in Taiwan. It was in high school that she received Jesus Christ as her personal Lord and Savior. Before receiving her Masters in Ministry from Moody Theological Seminary in 2012, she had attained her Masters in Chemistry and doctorate in Education. Her passion is to bring children to the saving knowledge of Jesus Christ, and to equip parents and teachers to raise their children as followers of Christ. Hui-Li serves side by side with her husband, Paul.

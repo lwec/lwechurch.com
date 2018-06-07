@@ -2,6 +2,7 @@
 name: Pastor Geoff Ng
 position: English Youth Pastor
 weight: 30
+title: ''
 ---
 
 Born and raised in NYC, Pastor Geoff graduated from the University of Illinois at Urbana-Champaign and then worked for 4 years in information technology at a Fortune 100 company. After receiving his call to full-time ministry, Geoff attended Trinity Evangelical Divinity School in Deerfield, IL, where he earned his MDiv and ThM. He oversees Overflow Youth Group after 5 years as a youth pastoral intern.
