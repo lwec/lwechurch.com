@@ -11,13 +11,7 @@ fields:
   label: Date
   type: datetime
   hidden: false
-  default: 
-- name: speakers
-  label: Speakers
-  type: tag_list
-  hidden: false
   default:
-  - Barry Gin
 - type: text
   name: speaker
   label: Speaker
