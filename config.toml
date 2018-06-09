@@ -2,6 +2,7 @@ baseURL = "http://lwechurch.com/"
 languageCode = "en-us"
 preserveTaxonomyNames = true
 title = "Living Water Evangelical Church"
+paginate = 25
 
 disableLiveReload = true
 

@@ -21,10 +21,6 @@
     "start:prod": "run-s build hugo:prod"
   },
   "lint-staged": {
-    "*.html": [
-      "prettier",
-      "git add"
-    ],
     "*.js": [
       "prettier",
       "eslint --fix",

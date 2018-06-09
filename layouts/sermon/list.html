@@ -5,9 +5,15 @@
   <div class="container">
     <div class="row">
       <div class="lw14-sermons col-xs-12">
-          {{ range .Data.Pages }}
-            {{ partial "sermon.html" . }}
-          {{ end }}
+        {{ $paginator := .Paginate .Data.Pages }}
+
+        <div class="lw14-sermons__pagination">
+            {{ template "_internal/pagination.html" . }}
+        </div>
+
+        {{ range $paginator.Pages }}
+          {{ partial "sermon.html" . }}
+        {{ end }}
       </div>
     </div>
   </div>
