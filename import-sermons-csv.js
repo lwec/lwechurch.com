@@ -31,10 +31,10 @@ function generateSermonFileContentFromData({ title, speaker, date, sermonUrl }) 
   return {
     fileName,
     contents: `---
-title: ${title}
-speaker: ${speaker}
+title: "${title}"
+speaker: "${speaker}"
 date: "${date}"
-sermonUrl: ${sermonUrl}
+sermonUrl: "${sermonUrl}"
 ---`
   };
 }
