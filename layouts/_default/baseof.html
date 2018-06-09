@@ -5,7 +5,7 @@
   {{ partial "head.html" . }}
 </head>
 
-<body class="lw14-body lw14-body--{{ .Section }}">
+<body class="lw14-body lw14-body--{{ if .IsHome }}home{{ else }}{{ .Kind }}-{{ if eq .Kind "section" }}{{ .Section }}-{{ end }}{{ .File.TranslationBaseName }}{{ end }}">
   {{ partial "nav.html" . }}
 
   <section class="lw14-living-water-evangelical-church-intro lw14-page-intro jumbotron">
