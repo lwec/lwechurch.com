@@ -8,6 +8,7 @@
         "optionalDependencies": true,
         "peerDependencies": true
       }
-    ]
+    ],
+    "no-use-before-define": ["error", "nofunc"]
   }
 }

@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "lodash": "^4.17.10",
     "rellax": "^1.6.2"
   },
   "devDependencies": {
@@ -57,6 +58,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^0.28.11",
+    "csv-parse": "^2.5.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
