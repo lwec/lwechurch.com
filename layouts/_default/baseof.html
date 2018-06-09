@@ -11,7 +11,7 @@
   <section class="lw14-living-water-evangelical-church-intro lw14-page-intro jumbotron">
     <div class="container">
       <div class="row">
-        <header class="col-xs-12" data-stellar-ratio="1.8">
+        <header class="col-xs-12">
           <h1 class="lw14-page-title">
             {{ block "pageTitle" . }}
               <!-- pageTitle -->
@@ -34,6 +34,12 @@
   {{ end }}
 
   {{ partial "footer.html" }}
+
+  {{ if eq .Site.Params.environment "production" }}
+    <script src="{{ .Site.BaseURL }}js/lwechurch.js"></script>
+  {{ else if eq .Site.Params.environment "development" }}
+    <script src="//localhost:8080/lwechurch.js"></script>
+  {{ end }}
 </body>
 
 </html>

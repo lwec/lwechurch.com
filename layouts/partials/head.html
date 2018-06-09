@@ -16,7 +16,4 @@
 
 {{ if eq .Site.Params.environment "production" }}
   <link rel="stylesheet" href="{{ .Site.BaseURL }}lwechurch.css" />
-  <script src="{{ .Site.BaseURL }}js/lwechurch.js"></script>
-{{ else if eq .Site.Params.environment "development" }}
-  <script src="//localhost:8080/lwechurch.js"></script>
 {{ end }}
