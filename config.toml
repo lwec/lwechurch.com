@@ -1,4 +1,4 @@
-baseURL = "http://lwechurch.com/"
+baseURL = "/"
 languageCode = "en-us"
 preserveTaxonomyNames = true
 title = "Living Water Evangelical Church"

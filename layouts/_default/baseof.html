@@ -36,7 +36,7 @@
   {{ partial "footer.html" }}
 
   {{ if eq .Site.Params.environment "production" }}
-    <script src="{{ .Site.BaseURL }}js/lwechurch.js"></script>
+    <script src="{{ .Site.BaseURL }}lwechurch.js"></script>
   {{ else if eq .Site.Params.environment "development" }}
     <script src="//localhost:8080/lwechurch.js"></script>
   {{ end }}
