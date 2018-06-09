@@ -10,7 +10,7 @@
   "scripts": {
     "build": "run-s clean webpack:prod hugo:build",
     "clean": "rimraf static/* && rimraf public/*",
-    "precommit": "lint-staged && yarn run clean && yarn run build && git add .",
+    "precommit": "lint-staged && yarn run clean && yarn run build && git add public/* && git add static/*",
     "webpack:dev": "webpack-serve --config=webpack.dev.js --hot",
     "webpack:prod": "webpack --config=webpack.prod.js",
     "hugo:dev": "hugo server --config=config.dev.toml -D",
