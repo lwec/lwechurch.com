@@ -6,13 +6,23 @@ weight: 10
 
 <div class="row">
   <div class="col-xs-11 col-xs-offset-1 col-sm-9 col-md-8 col-lg-9 col-lg-offset-1">
-    <ul class="lw14-landing-about-list">
-      <li class="lw14-landing-about-list-item">…aspiring to be a grace-filled body of Christ.</li>
-      <li class="lw14-landing-about-list-item">…striving to build on God’s truth and be transformed daily by His word.</li>
-      <li class="lw14-landing-about-list-item">…a multi-generational Chinese church seeking to be a praying community of believers.</li>
-      <li class="lw14-landing-about-list-item">…a family where each member offers their gifts, abilities, and experiences to further God’s kingdom.</li>
-      <li class="lw14-landing-about-list-item">…encouraging one another to be all that God intends.</li>
-    </ul>
+    <div class="lw14-landing-about-list">
+      <p class="lw14-landing-about-list-item">
+        …aspiring to be a grace-filled body of Christ.
+      </p>
+      <p class="lw14-landing-about-list-item">
+        …striving to build on God’s truth and be transformed daily by His word.
+      </p>
+      <p class="lw14-landing-about-list-item">
+        …a multi-generational Chinese church seeking to be a praying community of believers.
+      </p>
+      <p class="lw14-landing-about-list-item">
+        …a family where each member offers their gifts, abilities, and experiences to further God’s kingdom.
+      </p>
+      <p class="lw14-landing-about-list-item">
+        …encouraging one another to be all that God intends.
+      </p>
+    </div>
   </div>
 </div>
 
