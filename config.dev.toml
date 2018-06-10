@@ -6,3 +6,11 @@ paginate = 25
 
 [params]
 environment = "development"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "mandarin"
+    name = "中文"
+    url = "http://lwechurch.org"
+    weight = 1000

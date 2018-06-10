@@ -1,6 +1,4 @@
 ---
-title: ''
-menu:
-  main: {}
-
+title: Sermons
+menu: main
 ---

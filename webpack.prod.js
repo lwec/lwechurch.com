@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -126,6 +127,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'lwechurch.css'
     }),
+    new CopyWebpackPlugin([{
+      from: path.resolve(__dirname, 'static_src', 'favicon.ico'),
+      to: path.resolve(__dirname, 'static')
+    }])
   ],
 
   mode: 'production',

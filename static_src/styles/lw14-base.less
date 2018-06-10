@@ -53,18 +53,6 @@ ol,
 dl {
   line-height: 1.5;
 }
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-  background: transparent;
-}
-.navbar-static-top {
-  z-index: 0;
-}
-.nav-tabs > li > a {
-  line-height: 50px;
-  padding: 0 15px;
-}
 
 // Drupal overrides
 div.status {
@@ -126,72 +114,114 @@ p {
 .lw14-nav-container {
   margin-bottom: 0;
   background: @bg-nav-rgba;
-}
-.lw14-nav {
-  background: transparent;
+
   .emphasis-title();
   .light-font-smoothing();
+}
+.lw14-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.lw14-nav-logo {
+  display: block;
+  width: 53px;
+  height: 50px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url('@{img_dir}/menu-logo.png') no-repeat scroll center center;
+}
+.lw14-nav__links {
+  display: none;
+  padding-left: 10px;
 
-  &-logo {
-    direction: ltr;
-    text-indent: -9999px;
-    background: transparent url('@{img_dir}/menu-logo.png') no-repeat scroll
-      center center;
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
+}
+.lw14-nav__link {
+  color: @bg-light;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
-  &-menu-item,
-  .navbar-inverse & &-menu-item-link {
-    color: @bg-light;
-    line-height: 50px;
-  } // Bootstrap selector override
-  .navbar-inverse & &-menu-item-link {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  &-menu-item.active {
-    padding-left: 15px;
-  }
-  &-menu-item-link {
-    transition: text-shadow 300ms, color 300ms;
-  }
-  &-menu-item-link:hover {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  transition: text-shadow 300ms, color 300ms;
+}
+.lw14-nav__link:hover {
+  color: @bg-light;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.lw14-nav__links .lw14-nav__link {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-height: 50px;
+
+  line-height: 50px;
+
+  &:first-child { padding-left: 0; }
+  &:last-child { padding-right: 0; }
+}
+
+.lw14-nav__mobile-nav-toggle {
+  height: 50px;
+  width: 50px;
+
+  color: @bg-light;
+  font-size: 1.5em;
+  line-height: 50px;
+
+  background: transparent;
+  border: 0 none;
+
+  &:focus {
+    outline-color: @bg-light;
   }
 }
 
-.lw14-nav-tabs {
-  margin-top: -50px;
-  .emphasis-title();
-  text-align: center;
-  border-bottom: 0 none;
+.lw14-mobile-nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
 
-  .nav-tabs {
-    border-bottom: 0;
-  }
+  text-align: right;
 
-  li {
-    margin-bottom: 0;
-    margin-right: 10px;
-  } // override bootstrap
-  li a {
-    color: @bg-light;
-    background: @bg-nav;
-    background: @bg-nav-rgba;
-    border: 0 none;
+  background: inherit;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 300ms;
+}
+.lw14-mobile-nav--active {
+  transform: translate3d(0, 0, 0);
+}
+.lw14-mobile-nav__close {
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+
+  color: @bg-light;
+  font-size: 1.4em;
+  line-height: 50px;
+
+  background: transparent;
+  border: 0 none;
+
+  transition: text-shadow 300ms;
+
+  &:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   }
-  li a:hover {
-    color: @link-text;
-    background: @bg-nav;
-    background: @bg-nav-rgba;
+  &:focus {
+    outline-color: @bg-light;
   }
-  li.active a,
-  li.active a:hover {
-    background: @bg-light;
-    border: 0 none;
-  }
-  li:not(.active) {
-    .light-font-smoothing();
-  }
+}
+.lw14-mobile-nav .lw14-nav__link {
+  display: block;
+  padding-left: 15px;
+  padding-right: 30px;
+
+  font-size: 1.5em;
+  line-height: 50px;
 }
 
 .lw14-content .form-item,

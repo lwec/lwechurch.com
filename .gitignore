@@ -18,3 +18,7 @@
 
 # Node
 node_modules/
+
+# Ignore hugo static/public folders, as they are built on deployment
+public/*
+static/*
