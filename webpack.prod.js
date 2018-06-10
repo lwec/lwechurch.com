@@ -1,7 +1,7 @@
 const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
@@ -78,7 +78,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               outputPath: '/images/',
-              name: '[name].[ext]'
+              name: '[name].[ext]',
             },
           },
         ],
@@ -112,10 +112,10 @@ module.exports = {
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
-        sourceMap: true
+        sourceMap: true,
       }),
-      new OptimizeCSSAssetsPlugin({})
-    ]
+      new OptimizeCSSAssetsPlugin({}),
+    ],
   },
 
   output: {
@@ -125,12 +125,14 @@ module.exports = {
 
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'lwechurch.css'
+      filename: 'lwechurch.css',
     }),
-    new CopyWebpackPlugin([{
-      from: path.resolve(__dirname, 'static_src', 'favicon.ico'),
-      to: path.resolve(__dirname, 'static')
-    }])
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, 'static_src', 'favicon.ico'),
+        to: path.resolve(__dirname, 'static'),
+      },
+    ]),
   ],
 
   mode: 'production',

@@ -1,14 +1,23 @@
-@media only screen and ( min-width: 1200px ) {
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 24px;
+  }
 
-body { font-size: 24px; }
+  .lw14-nav {
+    &-logo {
+      height: 60px;
+    }
+    &-menu-item,
+    .navbar-inverse & &-menu-item-link {
+      line-height: 60px;
+    }
+  }
 
-.lw14-nav {
-	&-logo { height: 60px; }
-	&-menu-item,
-	.navbar-inverse & &-menu-item-link { line-height: 60px; }
-}
-
-.lw14-page-intro { padding-top: 60px; }
-.jumbotron .lw14-page-title { padding-top: 120px; font-size: 2em; }
-
+  .lw14-page-intro {
+    padding-top: 60px;
+  }
+  .jumbotron .lw14-page-title {
+    padding-top: 120px;
+    font-size: 2em;
+  }
 }

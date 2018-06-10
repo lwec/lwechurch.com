@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 module.exports = {
   devServer: {
-    publicPath: 'http://localhost:8080/'
+    publicPath: 'http://localhost:8080/',
   },
   devtool: 'eval',
   serve: {
@@ -12,10 +12,10 @@ module.exports = {
       app.use(
         cors({
           origin: '*',
-          exposeHeaders: 'Service-Worker-Allowed'
-        })
+          exposeHeaders: 'Service-Worker-Allowed',
+        }),
       );
-    }
+    },
   },
 
   entry: './static_src/index',
@@ -36,8 +36,8 @@ module.exports = {
           {
             loader: 'style-loader',
             options: {
-              sourceMap: true
-            }
+              sourceMap: true,
+            },
           },
           {
             loader: 'css-loader',
@@ -59,8 +59,8 @@ module.exports = {
           {
             loader: 'style-loader',
             options: {
-              sourceMap: true
-            }
+              sourceMap: true,
+            },
           },
           {
             loader: 'css-loader',
@@ -76,8 +76,8 @@ module.exports = {
           {
             loader: 'style-loader',
             options: {
-              sourceMap: true
-            }
+              sourceMap: true,
+            },
           },
           {
             loader: 'css-loader',
@@ -100,7 +100,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               outputPath: 'images/',
-              name: '[name].[ext]'
+              name: '[name].[ext]',
             },
           },
         ],
@@ -135,9 +135,7 @@ module.exports = {
     publicPath: 'http://localhost:8080/',
   },
 
-  plugins: [
-    new webpack.NamedModulesPlugin()
-  ],
+  plugins: [new webpack.NamedModulesPlugin()],
 
   mode: 'production',
 };

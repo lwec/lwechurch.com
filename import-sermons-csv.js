@@ -10,7 +10,9 @@ if (!csvFilePathArg) {
   throw new Error('No .csv file argument given, please use --csv=path-to.csv');
 }
 
-const csvFilePath = csvFilePathArg.substring(csvFilePathArg.indexOf('--csv=') + 6);
+const csvFilePath = csvFilePathArg.substring(
+  csvFilePathArg.indexOf('--csv=') + 6,
+);
 const csvStr = extractCsvStringFromFile(csvFilePath);
 const csv = parse(csvStr, { columns: true });
 
@@ -26,7 +28,12 @@ function extractCsvStringFromFile(filepath) {
   return fs.readFileSync(filepath, 'utf-8');
 }
 
-function generateSermonFileContentFromData({ title, speaker, date, sermonUrl }) {
+function generateSermonFileContentFromData({
+  title,
+  speaker,
+  date,
+  sermonUrl,
+}) {
   const fileName = `${_.kebabCase(title)}.md`;
   return {
     fileName,
@@ -35,7 +42,7 @@ title: "${title}"
 speaker: "${speaker}"
 date: "${date}"
 sermonUrl: "${sermonUrl}"
----`
+---`,
   };
 }
 
