@@ -4,5 +4,14 @@ languageCode = "en-us"
 paginate = 25
 preserveTaxonomyNames = true
 title = "Living Water Evangelical Church"
+
 [params]
 environment = "production"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "mandarin"
+    name = "中文"
+    url = "http://lwechurch.org"
+    weight = 1000

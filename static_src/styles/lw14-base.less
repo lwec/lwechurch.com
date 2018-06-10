@@ -153,8 +153,8 @@ p {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 .lw14-nav__links .lw14-nav__link {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   max-height: 50px;
 
   line-height: 50px;
@@ -176,6 +176,10 @@ p {
 
   &:focus {
     outline-color: @bg-light;
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: none;
   }
 }
 
