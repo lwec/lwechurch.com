@@ -1,10 +1,8 @@
 baseURL = "/"
+disableLiveReload = true
 languageCode = "en-us"
+paginate = 25
 preserveTaxonomyNames = true
 title = "Living Water Evangelical Church"
-paginate = 25
-
-disableLiveReload = true
-
 [params]
 environment = "production"
