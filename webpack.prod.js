@@ -132,6 +132,14 @@ module.exports = {
         from: path.resolve(__dirname, 'static_src', 'favicon.ico'),
         to: path.resolve(__dirname, 'static'),
       },
+      {
+        from: path.resolve(
+          __dirname,
+          'static_src',
+          'google29f18f3630007b5e.html',
+        ),
+        to: path.resolve(__dirname, 'static'),
+      },
     ]),
   ],
 
