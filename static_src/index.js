@@ -26,3 +26,7 @@ function hideMobileNav() {
   const mobileNavEl = document.querySelector('.lw14-mobile-nav');
   mobileNavEl.classList.remove('lw14-mobile-nav--active');
 }
+
+setTimeout(() => {
+  document.querySelector('.lw14-mobile-nav').style.right = 0;
+}, 500);
