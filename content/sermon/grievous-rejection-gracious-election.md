@@ -2,5 +2,5 @@
 title: "Grievous Rejection Gracious Election"
 speaker: "Barry Gin"
 date: "2017-08-20"
-sermonUrl: "http://35.190.93.184/sermons/20170820_sunday_barry_gin_grievous_rejection_gracious_election.mp3"
+sermonUrl: "//cdn.lwechurch.com/sermons/20170820_sunday_barry_gin_grievous_rejection_gracious_election.mp3"
 ---
