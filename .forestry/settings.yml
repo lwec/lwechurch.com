@@ -4,9 +4,9 @@ auto_deploy: true
 admin_path: 
 webhook_url: 
 sections:
-  staff:
+  content/staff:
     default_front_matter_template: staff
-  sermon:
+  content/sermon:
     default_front_matter_template: sermon
 upload_dir: static/uploads
 public_path: "/uploads"
