@@ -11,7 +11,7 @@ url = "http://lwechurch.org"
 weight = 3
 [[menu.main]]
 name = "Summer Retreat Registration"
-url = "http://lwechurch.org/development/MemberPortal/Login.aspx"
+url = "http://lwechurch.org/development/MemberPortal/LoginEN.aspx"
 weight = 2
 [params]
 environment = "production"
