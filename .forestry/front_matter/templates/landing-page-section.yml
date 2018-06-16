@@ -23,5 +23,5 @@ fields:
   hidden: false
   default: ''
 pages:
-- landing-page-section/about.md
-- landing-page-section/visitors.md
+- content/landing-page-section/about.md
+- content/landing-page-section/visitors.md
