@@ -8,10 +8,6 @@ title = "Living Water Evangelical Church"
 identifier = "mandarin"
 name = "中文"
 url = "http://lwechurch.org"
-weight = 3
-[[menu.main]]
-name = "Summer Retreat Registration"
-url = "http://lwechurch.org/development/MemberPortal/LoginEN.aspx"
 weight = 2
 [params]
 environment = "production"
