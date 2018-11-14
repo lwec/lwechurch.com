@@ -1,4 +1,5 @@
 ---
+label: staff
 hide_body: false
 is_partial: false
 fields:
@@ -22,3 +23,9 @@ fields:
   type: text
   hidden: false
   default: ''
+pages:
+- content/staff/tony-chon.md
+- content/staff/barry-gin.md
+- content/staff/hui-li-chang.md
+- content/staff/james-huang.md
+- content/staff/geoff-ng.md

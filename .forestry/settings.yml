@@ -4,10 +4,26 @@ auto_deploy: true
 admin_path: 
 webhook_url: 
 sections:
-  content/staff:
-    default_front_matter_template: staff
-  content/sermon:
-    default_front_matter_template: sermon
+- type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
+  path: content/landing-page-section
+  label: Landing page section
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/staff
+  label: Staff
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/sermon
+  label: Sermon
+  create: all
+  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
