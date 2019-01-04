@@ -24,6 +24,8 @@ sections:
   label: Sermon
   create: all
   match: "**/*"
+  templates:
+  - sermon
 - type: directory
   path: data
   label: Data
