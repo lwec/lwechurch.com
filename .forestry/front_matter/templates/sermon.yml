@@ -27,7 +27,7 @@ fields:
 - name: draft
   label: Draft
   type: boolean
-  hidden: false
+  hidden: true
   default: false
 - type: text
   name: sermonUrl
