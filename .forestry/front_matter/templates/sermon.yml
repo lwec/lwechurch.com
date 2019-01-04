@@ -28,7 +28,7 @@ fields:
   label: Draft
   type: boolean
   hidden: false
-  default: true
+  default: false
 - type: text
   name: sermonUrl
   label: Sermon URL
