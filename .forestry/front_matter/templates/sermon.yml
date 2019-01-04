@@ -25,6 +25,13 @@ fields:
   type: boolean
   hidden: false
   default: true
+- type: text
+  name: sermonUrl
+  label: Sermon URL
+  description: The web address to the sermon (starts with //cdn.lwechurch.com/sermons/).
+  config:
+    required: true
+  default: "//cdn.lwechurch.com/sermons/date_dayOrNumber_speaker_title.mp3"
 pages:
 - content/sermon/when-god-gives-up.md
 - content/sermon/growing-up.md
