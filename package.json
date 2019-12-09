@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.13",
     "rellax": "^1.6.2"
   },
   "devDependencies": {
