@@ -79,6 +79,6 @@
     "webpack": "^4.9.1",
     "webpack-cli": "^2.1.4",
     "webpack-serve": "^1.0.2",
-    "yarn": "^1.7.0"
+    "yarn": "^1.17.3"
   }
 }
