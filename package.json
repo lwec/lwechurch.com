@@ -44,7 +44,7 @@
     "trailingComma": "all"
   },
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.3.1",
     "lodash": "^4.17.13",
     "rellax": "^1.6.2"
   },
